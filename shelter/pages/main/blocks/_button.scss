@@ -1,0 +1,22 @@
+.button {
+display: inline-block;
+font-family: 'Georgia';
+font-size: 17px;
+line-height: 130%;
+letter-spacing: 0.06em;
+color: #292929;
+padding: 14px 43px;
+border-radius: 100px;
+background: $beige;
+transition: background-color 0.3s ease 0s;
+
+&:hover {
+    background: $lightBeige;
+}
+                
+}
+
+.button_light {
+    border: 2px solid $lightBeige;
+    background-color: #FFF;  
+}

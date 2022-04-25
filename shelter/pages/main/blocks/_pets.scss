@@ -1,0 +1,110 @@
+.pets {
+  background-color: #f6f6f6;
+
+  .container {
+    padding: 80px 15px 100px 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;  
+    gap: 58px;
+  }
+
+  &__title {
+    color: $darkGrey;
+    font-family: "Georgia";
+    font-size: 35px;
+    line-height: 130%;
+    letter-spacing: 0.06em;
+    max-width: 400px;
+    text-align: center;
+    margin: 0 auto;
+  }
+
+  &__button {
+      text-align: center;
+  }
+
+  &__button {
+     margin: 0 auto;
+  }
+}
+
+/*-----------adaptive-----*/
+
+@media (max-width:1279.5px) {
+  .pets .container {
+    padding: 81px 30px 100px;
+    gap:58px;
+  }
+}
+
+@media (max-width:767px){
+  .pets .container{
+    padding: 41px 10px;
+    gap: 43px;
+
+    .pets__title {
+      font-size: 25px;
+    }
+  }
+}
+
+/*--------pets-page--------------*/
+.container.pets-page {
+  padding: 200px 15px 100px;
+}
+
+.pets__content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+
+  .card {
+    margin-bottom: 30px;
+  }
+}
+
+.pets-page__navigation {
+  margin-top: 26px;
+}
+
+/*-----------adaptive-----*/
+
+@media (max-width:1279.5px) {
+ .container.pets-page {
+   padding: 200px 30px 76px;
+   gap:27px;
+
+   .pets-page__slider{
+     padding: 0 64px;
+
+     .pets__content {
+       justify-content: center;
+       column-gap: 40px;
+       row-gap: 27px;
+       max-height: 1390px;
+       max-width: 600px;
+       overflow: hidden;
+
+       .card {
+        margin-bottom: 0;
+      }
+     }
+
+     .pets-page__navigation {
+      margin-top: 15px;
+    }
+   }
+ }
+}
+
+@media (max-width:767px) {
+  .container.pets-page {
+    padding: 161px 10px 42px;
+    gap: 42px;
+
+    .pets__content {
+      width: 300px;
+    }
+  }
+}

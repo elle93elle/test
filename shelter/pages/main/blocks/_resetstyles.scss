@@ -1,0 +1,71 @@
+*,*:before,*:after {
+    padding: 0;
+    margin: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul,ol,li {
+    list-style: none;
+}
+
+img {
+    vertical-align: top;
+}
+
+h1,h2,h3,h4,h5,h6 {
+    font-size: inherit;
+    font-weight: inherit;
+}
+
+html,body {
+    height: 100%;
+    line-height: 1;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: "Arial";
+    font-size: 15px;
+    color: $darkGrey;
+}
+
+body.active {
+    overflow: hidden;
+}
+
+.lock {
+    overflow: hidden;
+}
+
+.wrapper {
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
+}
+
+.container{
+    max-width: 1230px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 500vh;
+    display: none;
+    background: rgba(41, 41, 41, 0.6);
+}
+
+.shadow {
+    background: rgba(41, 41, 41, 0.6);
+    display: block;
+}

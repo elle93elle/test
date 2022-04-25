@@ -1,0 +1,99 @@
+.start-screen {
+  background: url("../../assets/images/startScreen/gradient-background.jpg") 0 0/100%
+    100% no-repeat;
+
+    .container{
+        padding: 180px 15px 0 15px;
+        display: flex;
+        gap: 42px;
+    }
+
+    &__content {
+        display: flex;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        flex: 0 1 42%;
+    }
+
+    &__block-text {
+        max-width: 460px;
+        margin-top: -80px;
+    }
+
+    &__image {
+        flex: 0 1 58%;
+    }
+}
+
+.block-text {
+  &__title {
+    color: #fff;
+    font-family: "Georgia";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 44px;
+    line-height: 130%;
+    margin-bottom: 42px;
+    max-width: 310px;
+  }
+
+  &__text {
+    color: $lightGrey;
+    line-height: 160%;
+    margin-bottom: 42px;
+  }
+}
+
+/*---------Adaptive-------------*/
+@media (max-width: 1279.5px) {
+  .start-screen .container {
+    padding: 151px 30px 0;
+    flex-direction: column;
+   gap: 100px;
+  }
+
+  .start-screen__content {
+    display: flex;
+    justify-content: center;
+    
+  .start-screen__block-text {
+    display: flex;
+    flex-direction: column;
+  }
+    .start-screen__block-text {
+      margin: 0;
+    }
+     
+    .block-text__button {
+    margin: 0 auto;
+    }
+  }
+
+  .start-screen__image {
+    display: flex;
+    justify-content: flex-end;
+  }
+}
+
+@media (max-width: 767px) {
+  .start-screen .container {
+    padding: 149px 10px 0;
+    flex-direction: column;
+   gap: 105px;
+
+   .block-text__title{
+     font-size: 25px;
+     text-align: center;
+     max-width: 100%;
+     padding: 0 10%;
+     letter-spacing: 0.06em;
+   }
+
+   .block-text__text{
+     text-align: center;
+   }
+  }
+
+  
+}

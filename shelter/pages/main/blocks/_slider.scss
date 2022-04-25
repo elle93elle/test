@@ -1,0 +1,99 @@
+.slider {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.slider__wrapper {
+    width: 990px;
+    overflow: hidden;
+    display: flex;
+}
+
+.slider__cards {
+    display: flex;
+    position: relative;
+    left: -990px;
+}
+
+.slider__list {
+    display: flex;
+    gap: 90px;
+    width: 990px;
+}
+
+.slider__arrow {
+    height: 52px;
+    width: 52px;
+    border-radius: 100px;
+    border: 2px solid $lightBeige;
+    transition: background-color 0.5s ease 0s;
+    display: flex;
+
+    &:hover {
+        background-color: $lightBeige;
+    }
+
+    img {
+        margin: auto;
+    }
+}
+
+/*----adaptive-----*/
+@media (max-width:1279.5px) {
+.slider {
+    gap:12px;
+}
+
+.slider__wrapper {
+    width: 580px;
+}
+
+.slider__list {
+    gap: 40px;
+}
+
+}
+
+@media (max-width:767px) {
+.slider {
+    flex-wrap: wrap;
+    max-width: 270px;
+    justify-content: space-around;
+    row-gap: 17px;
+}
+
+    .slider__wrapper{
+        order: 1;
+        flex: 0 1 100%;
+    }
+
+    .arrow-left {
+     order:2;
+    }
+
+    .arrow-right {
+        order:3;
+    }
+}
+
+@keyframes move-left {
+    from {left: -990px;}
+    to {left: 0;}
+  }
+
+  .transition-left {
+    animation-name: move-left;
+    animation-duration: 3s;
+  }
+
+  @keyframes move-right {
+    from {left: -990px;}
+    to {left: -1980px;}
+  }
+
+  .transition-right {
+    animation-name: move-right;
+    animation-duration: 3s;
+  }

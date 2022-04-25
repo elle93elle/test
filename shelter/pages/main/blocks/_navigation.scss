@@ -1,0 +1,44 @@
+.navigation {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+
+  &__item {
+    width: 52px;
+    height: 52px;
+    border-radius: 50%;
+    border: 2px solid $lightBeige;
+    text-align: center;
+    line-height: 45px;
+    font-family: "Georgia";
+    font-size: 20px;
+    letter-spacing: 0.06em;
+    color: #292929;
+}
+
+  .disabled {
+      border-color: $lightGrey;
+      color: $lightGrey;
+  }
+
+  .abled {
+    background-color: #f6f6f6;
+  }
+
+  .active {
+      background-color: $beige;
+      color: #292929;
+      border: 2px solid transparent;
+  }
+
+.abled:hover {
+  cursor: pointer;
+  background-color: $lightBeige;
+}
+}
+
+@media (max-width:767px) {
+  .navigation {
+    gap: 10px;
+  }
+}

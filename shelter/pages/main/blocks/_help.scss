@@ -1,0 +1,99 @@
+.help .container {
+  padding: 83px 15px 43px 15px;
+}
+
+.help__title {
+  font-family: "Georgia";
+  font-size: 35px;
+  line-height: 130%;
+  letter-spacing: 0.06em;
+  color: $darkGrey;
+  max-width: 310px;
+  text-align: center;
+  margin: 0 auto 60px;
+}
+
+.help__list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+
+  .help__item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0 60px 55px;
+
+    .help__image {
+      margin-bottom: 30px;
+    }
+  }
+}
+
+.help__text {
+  font-family: "Georgia";
+  font-size: 20px;
+  line-height: 115%;
+  letter-spacing: 0.06em;
+  color: $darkGrey;
+}
+
+/*--------adaptive-----------*/
+@media (max-width: 1279.5px) {
+  .help .container {
+    padding: 82px 30px 100px;
+
+    .help__title {
+      margin: 0 auto 58px;
+    }
+
+    .help__list {
+      row-gap: 56px;
+      column-gap: 60px;
+    }
+
+    .help__item {
+      margin: 0;
+      width: 170px;
+    }
+  }
+}
+
+@media (max-width: 767px) {
+  .help .container {
+    padding: 43px 15px;
+
+    .help__title {
+      font-size: 25px;
+      max-width: 100%;
+      margin: 0 0 42px 0;
+      padding: 0 10%;
+    }
+
+
+    .help__list {
+      gap: 30px;
+      justify-content:space-between;
+
+      .help__item {
+        margin: 0;
+        width: 130px;
+
+        .help__text {
+          font-size: 15px;
+        }
+
+        .help__image {
+          margin-bottom: 20px;
+        }
+
+        img {
+          width: 50px;
+          height: 50px;
+        }
+      }
+    }
+
+  }
+}

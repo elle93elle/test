@@ -1,0 +1,135 @@
+.footer {
+  background: url("../../assets/images/startScreen/gradient-background.jpg") 0 0/100% 100% no-repeat;
+
+    .container {
+        padding-top: 40px;
+    }
+
+  &__title {
+    max-width: 280px;
+    font-family: "Georgia";
+    font-size: 35px;
+    line-height: 130%;
+    letter-spacing: 0.06em;
+    color: #ffffff;
+  }
+
+  a {
+    color: $beige;
+    font-family: "Georgia";
+    font-size: 20px;
+    line-height: 115%;
+    letter-spacing: 0.06em;
+  }
+}
+
+.footer__content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.footer__contacts {
+  display: flex;
+  flex-direction: column;
+  gap: 42px;
+  padding-bottom: 42px;
+
+  .footer__contacts-info {
+    display: flex;
+    flex-direction: column;
+    gap: 41px;
+  }
+}
+
+.footer__locations {
+  max-width: 300px;
+  display: flex;
+  flex-direction: column;
+  gap: 34px;
+  padding-bottom: 42px;
+
+  .footer__locations-info {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+  }
+}
+
+.footer__contact {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+
+/*-------adaptive-------*/
+
+@media (max-width: 1279.5px) {
+  .footer .container{
+    padding: 30px 46px 0;
+
+    .footer__content{
+      justify-content: center;
+
+      .footer__contacts{
+        flex: 0 1 50%;
+      }
+
+      .footer__locations{
+        flex: 0 1 50%;
+      }
+
+      .footer__image{
+        flex: 0 1 100%;
+        display: flex;
+        justify-content: center;
+        margin-top: 23px;
+      }
+    }
+  }
+}
+
+@media (max-width: 767px) {
+  .footer .container {
+    padding: 30px 10px 0;
+
+    .footer__content {
+      flex-direction: column;
+      align-items: center;
+
+      h3 {
+        font-size: 25px;
+        text-align: center;
+      }
+
+      .footer__contacts {
+        align-items: center;
+        padding-bottom: 39px;
+
+      .footer__contacts-info {
+        align-items: center;
+        gap:44px;
+      }
+    }
+
+    .footer__locations {
+      align-items: center;
+      gap: 40px;
+      padding-bottom: 18px;
+
+      .footer__locations-info {
+        gap:39px;
+      }
+    }
+    
+    .footer__image {
+      img {
+        width: 260px;
+        height: 269px;
+      }
+    }
+
+    }
+  }
+}
